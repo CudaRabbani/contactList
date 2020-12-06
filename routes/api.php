@@ -16,3 +16,12 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::prefix('contacts')->group(function () {
+  Route::get('/', 'ContactsController@getContacts');
+  Route::post('/', 'ContactsController@createContact');
+  Route::get('/{id}', 'ContactsController@showContact');
+  Route::put('/{id}', 'ContactsController@updateContact');
+  Route::delete('/{id}', 'ContactsController@removeContact');
+});
