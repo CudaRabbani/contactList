@@ -10,7 +10,7 @@ To setup the repo please follow the following steps:
 2. From downloaded project directory open a terminal and enter the following commands:
     - **cd contactList**
     - **composer install**
-3. copy the .env.example and past it in the same directory by renaming it .env and change the following for necessary database access
+3. copy the .env.example and paste it in the same directory by renaming it .env and change the following for necessary database access
    - DB_CONNECTION=mysql
    - DB_HOST=localhost
    - DB_PORT=3306
