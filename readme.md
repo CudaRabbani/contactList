@@ -10,7 +10,7 @@ To setup the repo please follow the following steps:
 2. From downloaded project directory open a terminal and enter the following commands:
     - **cd contactList**
     - **composer install**
-3. Configure your .env file in the contactList directory for necessary database access
+3. copy the .env.example and past it in the same directory by renaming it .env and change the following for necessary database access
    - DB_CONNECTION=mysql
    - DB_HOST=localhost
    - DB_PORT=3306
@@ -21,6 +21,7 @@ To setup the repo please follow the following steps:
    - **php artisan migrate**
    - **php artisan db:seed --class=ContactsTableSeeder**
 5. Run the app by typing into terminal: **php artisan serve**
+
 Please note the URL in the terminal for Laravel server (i.e: http://127.0.0.1:8000)
 
 We should be ready to test our api now.
